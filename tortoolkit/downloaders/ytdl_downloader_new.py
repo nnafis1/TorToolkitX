@@ -10,13 +10,13 @@ from typing import Union,List,Tuple,Dict,Optional
 from ..uploaders.rclone_uploader import RcloneUploader
 from ..status.ytdl_status import YTDLStatus
 from ..status.status_manager import StatusManager
-import youtube_dl
+import youtube_dlp
 from ..utils.human_format import human_readable_bytes
 from ..core.getVars import get_val
 from ..core.base_task import BaseTask
 from functools import partial
 from PIL import Image
-from youtube_dl import YoutubeDL
+from youtube_dlp import YoutubeDL
 from ..database.dbhandler import TtkUpload
 
 torlog = logging.getLogger(__name__)
